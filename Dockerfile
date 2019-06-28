@@ -1,8 +1,8 @@
-FROM openjdk@sha256:761a6053925601d420754753cfce5b5527478991f30ae21a49cfac019323935d
+FROM openjdk@sha256:dbdb67803b5063e9f274289bba598bf103e19d470bac4550995b28f5749f30e1
 
 WORKDIR /gcloud
 
-ARG CLOUD_SDK_VERSION=232.0.0
+ARG CLOUD_SDK_VERSION=252.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 
 RUN curl -O "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz" \
