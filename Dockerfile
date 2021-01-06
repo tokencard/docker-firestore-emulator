@@ -1,6 +1,6 @@
-FROM google/cloud-sdk:296.0.0-alpine
+FROM google/cloud-sdk:321.0.0-alpine
 
-RUN apk add openjdk8-jre=8.242.08-r0
+RUN apk add openjdk8-jre=8.252.09-r0
 RUN gcloud components install beta cloud-firestore-emulator
 
 COPY start.sh ./
